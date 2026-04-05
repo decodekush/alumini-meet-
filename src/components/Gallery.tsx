@@ -1,25 +1,29 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import img1 from '../assets/photogallery/2-25.JPG';
+import img2 from '../assets/photogallery/3-25.JPG';
+import img3 from '../assets/photogallery/4-25.JPG';
+import img4 from '../assets/photogallery/5-25.JPG';
+import img5 from '../assets/photogallery/6-25.JPG';
+import img6 from '../assets/photogallery/1-26.JPG';
+import img7 from '../assets/photogallery/2-26.JPG';
+import img8 from '../assets/photogallery/3-26.JPG';
+import img9 from '../assets/photogallery/4-26.JPG';
+import img10 from '../assets/photogallery/5-26.JPG';
 
 const Gallery = () => {
   const titleRef = useScrollAnimation({ yStart: 50, opacityStart: 0 });
   const galleryRef = useScrollAnimation({ yStart: 80, opacityStart: 0, delay: 0.2 });
   const images = [
-    {
-      src: "https://res.cloudinary.com/dge7dzxe0/image/upload/v1738065360/DSC_7079_jiewpn.webp",
-      alt: "Gallery Image 1"
-    },
-    {
-      src: "https://res.cloudinary.com/dge7dzxe0/image/upload/v1738065476/DSC_7471_epqbe0.webp",
-      alt: "Gallery Image 2"
-    },
-    {
-      src: "https://res.cloudinary.com/dge7dzxe0/image/upload/v1738065579/DSC_7500_fjua7r.webp",
-      alt: "Gallery Image 3"
-    },
-    {
-      src: "https://res.cloudinary.com/dge7dzxe0/image/upload/v1738065645/DSC_7524_lhojxd.webp",
-      alt: "Gallery Image 4"
-    }
+    { src: img1, alt: "Gallery Image 1" },
+    { src: img2, alt: "Gallery Image 2" },
+    { src: img3, alt: "Gallery Image 3" },
+    { src: img4, alt: "Gallery Image 4" },
+    { src: img5, alt: "Gallery Image 5" },
+    { src: img6, alt: "Gallery Image 6" },
+    { src: img7, alt: "Gallery Image 7" },
+    { src: img8, alt: "Gallery Image 8" },
+    { src: img9, alt: "Gallery Image 9" },
+    { src: img10, alt: "Gallery Image 10" }
   ];
   const marqueeImages = [...images, ...images];
 
@@ -50,7 +54,7 @@ const Gallery = () => {
                   className="flex-shrink-0 group"
                   aria-hidden={isDuplicate}
                 >
-                  <div className="relative w-96 h-screen-70 rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105 bg-gray-900">
+                  <div className="relative w-80 h-96 rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transition-all duration-500 transform hover:scale-105 bg-gray-900">
                     {/* Image container */}
                     <div className="w-full h-full bg-gray-900 overflow-hidden">
                       <img
@@ -61,10 +65,9 @@ const Gallery = () => {
                     </div>
 
                     {/* Gradient overlay on hover */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-end">
-                      <div className="p-8 text-white w-full">
-                        <p className="text-lg font-semibold">Memory #{(index % images.length) + 1}</p>
-                        <p className="text-sm text-gray-200 mt-2">Hover to pause</p>
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
+                      <div className="text-white text-center mt-auto mb-8">
+                        <p className="text-lg font-medium tracking-wide">Hover to pause</p>
                       </div>
                     </div>
 
