@@ -58,20 +58,7 @@ const Navbar = () => {
                 {label}
               </button>
             ))}
-            <button
-              onClick={() => goToRoute("/alumnimeet")}
-              className="relative inline-flex group items-center justify-center overflow-hidden rounded-full p-0.5 font-bold transition-transform hover:scale-110 duration-300 focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-offset-2 focus:ring-offset-slate-50"
-            >
-              {/* Spinning Gradient Border */}
-              <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#0EA5E9_0%,#6366F1_50%,#0EA5E9_100%)]" />
 
-              {/* Inner Button Content */}
-              <span className="inline-flex h-full w-full cursor-pointer items-center justify-center rounded-full bg-slate-950 px-6 py-2 text-sm font-bold text-white backdrop-blur-3xl transition-all group-hover:bg-slate-900 shadow-[0_0_20px_rgba(99,102,241,0.5)] group-hover:shadow-[0_0_35px_rgba(14,165,233,0.8)]">
-                <span className="bg-gradient-to-r from-cyan-300 to-indigo-400 bg-clip-text text-transparent group-hover:text-white transition-colors">
-                  MEET'26
-                </span>
-              </span>
-            </button>
             <a
               href="https://forms.gle/jpsTnk42FB8514jE8"
               target="_blank"
@@ -122,18 +109,7 @@ const Navbar = () => {
                 {label}
               </button>
             ))}
-            <button
-              type="button"
-              onClick={() => goToRoute("/alumnimeet")}
-              className="relative block w-full rounded-lg p-[2px] overflow-hidden group mt-4"
-            >
-              <span className="absolute inset-[-1000%] animate-[spin_3s_linear_infinite] bg-[conic-gradient(from_90deg_at_50%_50%,#0EA5E9_0%,#6366F1_50%,#0EA5E9_100%)]" />
-              <span className="relative block w-full rounded-md bg-slate-950 px-3 py-3 text-center font-bold text-white transition-colors group-hover:bg-slate-900">
-                <span className="bg-gradient-to-r from-cyan-300 to-indigo-400 bg-clip-text text-transparent">
-                  MEET'26
-                </span>
-              </span>
-            </button>
+
             <a
               href="https://forms.gle/jpsTnk42FB8514jE8"
               target="_blank"

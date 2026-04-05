@@ -319,14 +319,19 @@ const UpdateDetailsDialog: React.FC<UpdateDetailsDialogProps> = ({
                   <label className="block text-sm font-medium text-gray-300 mb-2">
                     Nature of Job
                   </label>
-                  <input
-                    type="text"
+                  <select
                     name="natureOfJob"
                     value={formData.natureOfJob || ""}
-                    onChange={handleChange}
-                    placeholder="e.g., Full-time, Freelance"
+                    onChange={handleChange as any}
                     className="w-full px-4 py-2 bg-gray-800 border border-gray-700 rounded-lg text-white focus:border-blue-500 focus:outline-none"
-                  />
+                  >
+                    <option value="" disabled>Select Nature of Job</option>
+                    <option value="Corporate">Corporate</option>
+                    <option value="Startup/Entrepreneurship">Startup/Entrepreneurship</option>
+                    <option value="Academia">Academia</option>
+                    <option value="Governance">Governance</option>
+                    <option value="Social Service/NGO">Social Service/NGO</option>
+                  </select>
                 </div>
               </div>
             </div>

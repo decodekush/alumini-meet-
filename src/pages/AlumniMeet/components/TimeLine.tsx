@@ -18,7 +18,7 @@ function AlumniMeetTimeline() {
                             <ul className="list-disc list-inside ml-5 space-y-1 text-gray-600 dark:text-gray-400">
                                 <li>Visit to MITS for old batches</li>
                                 <li>Fun games</li>
-                                <li>Informal interaction between alumnus</li>
+                                <li>Informal interaction between alumni</li>
                             </ul>
                         </li>
                         <li>

@@ -11,9 +11,21 @@ const Donate = () => {
                     <h2 className="text-3xl font-extrabold text-white sm:text-4xl">
                         Support Your Alma Mater
                     </h2>
-                    <p className="mt-4 text-xl text-gray-300">
-                        Help us nurture the next generation. We require alumni to donate generously to following accounts and send the slip at alumninet@iiitm.ac.in
+                    <p className="mt-4 text-xl text-gray-300 leading-relaxed font-medium">
+                        Your alma mater shaped your earliest dreams and stood as the foundation of your journey.
+                        Now, you can be the guiding light for the dreamers walking the same halls. 
+                        Every contribution, big or small, helps write a brighter future for the next generation.
                     </p>
+                    <div className="mt-8">
+                        <a
+                            href="https://forms.gle/3MACJYcPqgHD9sCRA"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-600 hover:bg-blue-700 transition-colors duration-300 shadow-lg hover:shadow-blue-500/30"
+                        >
+                            Donate Now
+                        </a>
+                    </div>
                 </div>
 
                 <div className="mt-12 grid gap-8 grid-cols-1 lg:grid-cols-2" ref={cardsRef}>
